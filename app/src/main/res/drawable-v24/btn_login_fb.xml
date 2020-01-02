@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--   1. 버튼이 눌렸을 때 색 변경-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/buttonLoginFBClicked"/>
+
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <!--    2. 정상(기본)일 떄-->
+    <!--            셀렉터라는 디자인 요소 안에
+정상 상태(item)일 때 모양(shape)은 색깔을 채우고(solid)
+ 라운드는(corners) 이렇게 하겠다는 구문-->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/buttonLoginFB"/>
+
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <!--    3. 버튼을 사용할 수 없을 때-->
+    <!--ex 이메일과 비밀번호를 누르지 않고 버튼을 누르면 회색 버튼 띄우기-->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/notAllowed"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+</selector>

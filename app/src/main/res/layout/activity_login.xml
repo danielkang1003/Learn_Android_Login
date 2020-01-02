@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:src="@drawable/balloon_icon"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/btn_login">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/profile_icon"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="LOG IN"
+            android:textColor="@color/textWhite" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="or" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log in with FaceBook"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/fb_button"
+        android:background="@drawable/btn_login_fb"
+        android:paddingLeft="32dp"
+        android:textColor="@color/textWhite"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Password"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main content -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#70ffffff"
+            app:menu="@menu/nav_menu_bottom"/>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c1a18</color>
+    <color name="colorPrimaryDark">#1f1b15</color>
+    <color name="colorAccent">#C51010</color>
+    <color name="buttonLogin">#ab1a1c</color>
+    <color name="buttonLoginFB">#44619c</color>
+    <color name="buttonLoginFBClicked">#3b578f</color>
+    <color name="notAllowed">#777777</color>
+    <color name="textWhite">#ffffff</color>
+</resources>
